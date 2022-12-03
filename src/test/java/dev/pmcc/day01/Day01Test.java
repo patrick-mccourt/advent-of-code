@@ -1,4 +1,4 @@
-package dev.pmcc;
+package dev.pmcc.day01;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -33,20 +33,20 @@ public class Day01Test {
 
     @Test
     public void part01WithSmallInput() {
-        assertEquals(24000, day01.part01(sample));
+        assertEquals(24000, day01.part1(sample));
     }
     @Test
     public void part01WithFullInput() {
-        assertEquals(66616, day01.part01(Day01Input.day01Full));
+        assertEquals(66616, day01.part1(Day01Input.day01Full));
     }
 
     @Test
     public void part02WithSmallInput() {
-        assertEquals(45000, day01.part02(sample));
+        assertEquals(45000, day01.part2(sample));
     }
 
     @Test
     public void part02WithFullInput() {
-        assertEquals(199172, day01.part02(Day01Input.day01Full));
+        assertEquals(199172, day01.part2(Day01Input.day01Full));
     }
 }

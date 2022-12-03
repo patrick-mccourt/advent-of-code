@@ -1,11 +1,14 @@
-package dev.pmcc;
+package dev.pmcc.day01;
+
+import dev.pmcc.Template;
 
 import java.util.Arrays;
 import java.util.Collections;
 
-public class Day01 {
+public class Day01 implements Template {
 
-    public int part01(String input) {
+    @Override
+    public int part1(String input) {
         String[] calories = input.split("\n\n");
         int highest = 0;
         int current = 0;
@@ -23,7 +26,8 @@ public class Day01 {
         return highest;
     }
 
-    public int part02(String input) {
+    @Override
+    public int part2(String input) {
         String[] calories = input.split("\n\n");
         Integer[] caloriesSummed = new Integer[calories.length];
         for (int i = 0; i < calories.length; i++) {

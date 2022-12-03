@@ -1,4 +1,4 @@
-package dev.pmcc;
+package dev.pmcc.day01;
 
 public class Day01Input {
 
